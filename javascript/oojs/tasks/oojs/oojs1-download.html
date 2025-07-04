@@ -26,14 +26,31 @@
 
   </body>
   <script>
-  class Shape {
+ class Shape {
 
-    name;
-    sides;
-    sideLength;
+  name;
+  sides;
+  sideLength;
+Shape(name,sides,sideLength)
+{
+this.name =name;
+this.sides=sides;
+this.sideLength=sideLength;
+}
 
-  }
+calcPerimeter()
+{
+return this.sideLength*this.sides;
+}
 
+}
+
+
+let square = new Shape("square",4,5)
+console.log(square.calcPerimeter())
+let traingle = new Shape("traingle",3,3)
+console.log(traingle .calcPerimeter())
+    
   </script>
 
 </html>
